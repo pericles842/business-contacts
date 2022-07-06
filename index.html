@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/styles/css/bootstrap.min.css">
+    <style>
+        .blockuno{
+            display: block;
+        }
+        .blockuno p{
+            margin: 0px;
+        }
+        .blockuno input{
+            margin-bottom: 10px;
+        }
+        .blockuno button {
+            margin-top: 50px;
+        }
+        .blockuno a {
+            text-decoration:none;
+        }
+        .block{
+            display: block;
+        }
+        .block p{
+            margin: 0px;
+            
+        }
+        .block input{
+            margin-bottom: 10px;
+        }
+    </style>
+    <title>Business Contacts</title>
+  </head>
+  <body>
+    <div class="container mt-ms-0 mt-lg-5 text-left " id="hidden-singup">
+       <div class="row justify-content-center" >
+        <div class="col-sm-12 col-lg-5 py-5 px-5 bg-dark text-white ">
+            <h1>Registrate</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio?</p>
+            <p>¿Ya tienes una cuenta?</p>
+            <div>
+                <a href="login.html">Inicia sesion</a>
+            </div>
+        </div>
+        <div class="col-sm-5 col-lg-5 ">
+            <form method="dialog">
+                <div class="block ">
+                    <p>Nombre</p>
+                    <input class="form-control" type="text"placeholder="Nombre"  id="name-singup">
+                    <br>
+                    <p>Apellido</p>
+                    <input class="form-control" type="text" placeholder="Apellido"  id="last-name-singup">
+                    <br>
+                    <p>Contraseña</p>
+                    <input class="form-control" type="password" placeholder="Contraseña" id="password-singup">
+                    <br>
+                    <p>Confirmar contraseña</p>
+                    <input class="form-control" type="password" placeholder="Confirmar contraseña"  id="password-confirm-singup">
+                    <br>
+                    <input class="form-control bg-primary text-white" type="button" value="Enviar" id="submit-singup">
+                </div>
+            </form>
+           </div>
+       </div>
+    </div>
+    <div class="container  mt-ms-0 mt-lg-5 text-left " id="hidden" style="display:none;">
+        <div class="row justify-content-center" >
+         <div class="col-sm-12 col-lg-5 py-5 px-5 bg-dark text-white ">
+             <h1>Iniciar sesion</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, distinctio?</p>
+             <p>¿No tienes cuenta? Registrate</p>
+             <div>
+                 <a href="index.html">Crear Cuenta</a>
+             </div>
+         </div>
+         <div class="col-sm-5 col-lg-5 ">
+             <form action="accountCreate.php" method="dialog">
+                 <div class="blockuno ">
+                     <p>Nombre</p>
+                     <input class="form-control" type="text" placeholder="Nombre"  id="name-login">
+                     <br>
+                     <p>Contraseña</p>
+                     <input class="form-control" type="password" placeholder="Contraseña" id="password-login">
+                     <br>
+                     <button class="form-control bg-primary text-white"  id="button-login-true" style="display:none;">
+                        <a class="text-white" href="accountCreate.php">Enviar</a>
+                    </button>
+                     <div  id="button-login-false">
+                        <input class="form-control bg-primary text-white" type="submit" value="Enviar">
+                     </div>
+                 </div>
+             </form>
+         </div>
+        </div>
+     </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="assets/models/js/bootstrap.min.js"></script>
+    <script src="assets/models/main.js"></script>
+  </body>
+</html>
